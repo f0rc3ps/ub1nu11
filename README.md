@@ -10,7 +10,7 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ***WARNING: YOU NEED TO BE A ROOT USER***
 
-## Install
+### Install
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/installUB.sh)"
 ```
@@ -18,7 +18,7 @@ env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master
 ```
 env bash -c "$("curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB.sh")"
 ```
-## Uninstall:
+### Uninstall:
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/uninstallUB.sh)"
 ```
