@@ -92,13 +92,9 @@ docker system prune
 docker system prune -a
 ```
 ### Tools
-- [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/)
+- [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
+- [Hive](https://docs.thehive-project.org/thehive/legacy/thehive3/installation/install-guide/)
+- [OWASP-Calculator](https://javierolmedo.github.io/OWASP-Calculator/)
 
-- 
-- WARNING: This will remove your already composing `samurai ub1nu11` image and docker from your machine, and from docker ENV!
-
-### Instruments:
-- OWASP Risk Assessment Calculator supported by OPSEC
-![](https://github.com/f0rc3ps/ub1nu11/blob/master/doc/Calc.png)
 
 **Have fun** ***engineers*** ;)
