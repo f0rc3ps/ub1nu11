@@ -60,7 +60,7 @@ ADD /env/CALC /var/www/html/CALC/
 # dionaea-docker
 # from https://github.com/DinoTools/dionaea-docker
 
-# Env SIEM
+# Env deployment
 COPY /env/* /var/www/html/
 COPY /sec/makesec.sh /
 
