@@ -12,16 +12,9 @@ services:
     image: "f0rc3ps/ub1nu11:latest"
 
 ### Grafana 
-  grafana:
+   grafana:
     image: grafana/grafana-enterprise
     container_name: grafana
     restart: unless-stopped
-    environment:
-      # increases the log level from info to debug
-      - GF_LOG_LEVEL=debug
     ports:
-      - '3000:3000'
-  volumes:
-      - 'grafana_storage:/var/lib/grafana'
-      volumes:
-    grafana_storage: {}
+     - '3000:3000'
