@@ -92,7 +92,7 @@ docker system prune
 docker system prune -a
 ```
 ### Tools
-- [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/)
+- [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/)
 - [Hive](https://hub.docker.com/r/thehiveproject/thehive)
 - [OWASP-Calculator](https://javierolmedo.github.io/OWASP-Calculator/)
 
