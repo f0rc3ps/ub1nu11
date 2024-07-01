@@ -24,7 +24,7 @@ sleep 5;
 echo "Please wait..."
 
 # Install ub1nu11
-git clone https://github.com/nu11secur1ty/ub1nu11.git && cd ub1nu11 && sudo docker-compose up -d
+git clone https://github.com/f0rc3ps/ub1nu11.git && cd ub1nu11 && sudo docker-compose up -d
 
 ### Clean installation:
 #cd ..
