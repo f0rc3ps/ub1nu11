@@ -7,6 +7,8 @@ apt autoremove -y
 
 # Clean docker
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+systemctl stop docker.socket
+systemctl stop docker.service
 sudo rm -rf /var/lib/docker 
 sudo rm -rf /etc/docker
 cd /etc/apt/sources.list.d/
