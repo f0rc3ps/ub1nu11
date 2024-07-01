@@ -27,7 +27,7 @@ echo "Please wait..."
 git clone https://github.com/nu11secur1ty/ub1nu11.git && cd ub1nu11 && sudo docker-compose up -d
 
 ### Clean installation:
-cd ..
-rm -rf ub1nu11/
+#cd ..
+#rm -rf ub1nu11/
 
 exit 0;
