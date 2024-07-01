@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+
+### ub1nu11 service
+  ub1nu11:
+    build: .
+    container_name: ub1nu11
+    restart: always
+    ports:
+      - "8080:80"
+    image: "nu11secur1ty/ub1nu11:latest"
+
+### Grafana 
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: unless-stopped
+    environment:
+      # increases the log level from info to debug
+      - GF_LOG_LEVEL=debug
+    ports:
+      - '3000:3000'
+    volumes:
+      - 'grafana_storage:/var/lib/grafana'
+volumes:
+  grafana_storage: {}
