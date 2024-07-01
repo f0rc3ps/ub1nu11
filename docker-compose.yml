@@ -19,13 +19,13 @@ services:
      - '3000:3000'
 
 ### The Hive
-  elasticsearch:
-    image: 'elasticsearch:7.11.1'
-    container_name: elasticsearch
-    restart: unless-stopped
-    ports:
+ elasticsearch:
+         image: 'elasticsearch:7.11.1'
+container_name: elasticsearch
+       restart: unless-stopped
+       ports:
       - '0.0.0.0:9200:9200'
-    environment:
+   environment:
       - http.host=0.0.0.0
       - discovery.type=single-node
       - cluster.name=hive
