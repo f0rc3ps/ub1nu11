@@ -6,6 +6,6 @@ echo "Please wait..."
 sleep 5;
 rm -rf ub1nu11
 git clone https://github.com/f0rc3ps/ub1nu11.git
-cd ${HOME}/ub1nu11
+cd ub1nu11
 docker-compose -f docker/docker-compose.yml up -d
 exit 0;
