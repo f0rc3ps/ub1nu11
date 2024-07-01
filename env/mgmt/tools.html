@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            /* Add image */
+            background-image: url("background.png");
+ 
+            /* Make image center */
+            background-position: center center;
+ 
+            /* Make image fixed */
+            background-attachment: fixed;
+ 
+            /* Not repeat images */
+            background-repeat: no-repeat;
+ 
+            /* Set background size 100% */
+            background-size: 100%;
+        }
+        
+        h1 {
+  font-size: 40px;
+}
+    </style>
+</head>
+
+<script>
+	function setHref() {
+	document.getElementById('Grafana').href = window.location.protocol + "//" + window.location.hostname + ":3000";
+	document.getElementById('Hive').href = window.location.protocol + "//" + window.location.hostname + ":3000";
+}
+</script>
+
+<body onload="setHref()">
+	<a href="" target="_blank" id="Grafana"><b><h1><p style="color:white;">Grafana</p></h1></b></a>
+	<a href="" target="_blank" id="Hive"><b><h1><p style="color:white;">Hive</p></h1></b></a>
+</body>
+</center>
+</html>
