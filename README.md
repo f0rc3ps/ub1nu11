@@ -93,6 +93,7 @@ docker system prune -a
 ```
 ### Tools
 - [Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/)
+- [Hive](https://hub.docker.com/r/thehiveproject/thehive)
 
 - 
 - WARNING: This will remove your already composing `samurai ub1nu11` image and docker from your machine, and from docker ENV!
