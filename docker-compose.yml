@@ -23,8 +23,8 @@ services:
       - '3000:3000'
     volumes:
       - 'grafana_storage:/var/lib/grafana'
-volumes:
-  grafana_storage: {}
+    volumes:
+    grafana_storage: {}
 
 ### Hive
     elasticsearch:
