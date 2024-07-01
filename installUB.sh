@@ -5,8 +5,8 @@ echo
 sleep 5;
 
 ### Clean and prepare the ENV
-systemctl stop docker.service
 systemctl stop docker.socket
+systemctl stop docker.service
 
 sleep 3;
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
