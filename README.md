@@ -16,7 +16,7 @@ env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master
 ```
 ### Update
 ```
-env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB.sh)"
+curl -s https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB.sh | sh
 ```
 ### Uninstall:
 ```
