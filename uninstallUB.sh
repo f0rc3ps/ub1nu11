@@ -19,12 +19,6 @@ rm -rf *docker*
 apt autoremove -y
 apt update && apt upgrade -y
 
-### ENV
-# tpotce > NOT WORKING
-#cd env/tpotce/
-#docker-compose -f ~/tpotce/docker-compose.yml down -v
-#bash uninstall.sh
-
 echo "### Now removing ${HOME}/ub1nu11."
 sudo rm -rf ${HOME}/ub1nu11
 apt autoremove -y
