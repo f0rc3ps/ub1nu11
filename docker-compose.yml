@@ -9,7 +9,7 @@ services:
     restart: always
     ports:
       - "8080:80"
-    image: "nu11secur1ty/ub1nu11:latest"
+    image: "f0rc3ps/ub1nu11:latest"
 
 ### Grafana 
   grafana:
