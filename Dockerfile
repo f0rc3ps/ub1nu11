@@ -51,15 +51,18 @@ RUN apt dist-upgrade -y
 
 EXPOSE 443 8080
 
-# Evironment
+# Clean Evironment
 RUN rm -rf /var/www/html/*
+
 # CALC
 RUN mkdir -p /var/www/html/CALC
 ADD /env/CALC /var/www/html/CALC/
 
 # env +
 RUN mkdir -p /var/www/html/env
-ADD /env /var/www/html/env
+ADD /env /var/www/html/env/
+
+# users
 COPY /sec/makesec.sh /
 
 # Protect 
