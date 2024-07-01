@@ -21,7 +21,7 @@ services:
       - GF_LOG_LEVEL=debug
     ports:
       - '3000:3000'
-    volumes:
+      volumes:
       - 'grafana_storage:/var/lib/grafana'
       volumes:
     grafana_storage: {}
