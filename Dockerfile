@@ -58,9 +58,8 @@ RUN rm -rf /var/www/html/*
 RUN mkdir -p /var/www/html/CALC
 ADD /env/CALC /var/www/html/CALC/
 
-# env +
-RUN mkdir -p /var/www/html/env
-ADD /env /var/www/html/env/
+# env 
+COPY /env/* /var/www/html/
 
 # users
 COPY /sec/makesec.sh /
