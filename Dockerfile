@@ -54,10 +54,6 @@ EXPOSE 443 8080
 # Clean Evironment
 RUN rm -rf /var/www/html/*
 
-# CALC
-RUN mkdir -p /var/www/html/CALC
-ADD /env/CALC /var/www/html/CALC/
-
 # mgmt
 RUN mkdir -p /var/www/html/mgmt
 ADD /env/mgmt /var/www/html/mgmt/
