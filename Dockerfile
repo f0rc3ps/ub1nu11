@@ -57,12 +57,9 @@ RUN rm -rf /var/www/html/*
 RUN mkdir -p /var/www/html/CALC
 ADD /env/CALC /var/www/html/CALC/
 
-# dionaea-docker
-# from https://github.com/DinoTools/dionaea-docker
-
-# Env deployment
-COPY /env/* /var/www/html/
-ADD /env/ /var/www/html/
+# env +
+RUN mkdir -p /var/www/html/env
+ADD /env /var/www/html/env
 COPY /sec/makesec.sh /
 
 # Protect 
