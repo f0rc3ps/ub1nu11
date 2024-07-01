@@ -14,7 +14,10 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/installUB.sh)"
 ```
-
+### Update
+```
+env bash -c "$("curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB.sh")"
+```
 ## Uninstall:
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/uninstallUB.sh)"
