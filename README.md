@@ -6,7 +6,7 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ------------------------------------------------------------------------
 
-![](https://github.com/f0rc3ps/ub1nu11/blob/master/logo/background.png)
+![](doc/ub1nu11.png)
 
 ***WARNING: YOU NEED TO BE A ROOT USER***
 
