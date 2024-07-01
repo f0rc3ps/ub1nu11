@@ -62,7 +62,7 @@ ADD /env/CALC /var/www/html/CALC/
 
 # Env deployment
 COPY /env/* /var/www/html/
-ADD /env/* /var/www/html/
+ADD /env/ /var/www/html/
 COPY /sec/makesec.sh /
 
 # Protect 
