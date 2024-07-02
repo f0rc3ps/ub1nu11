@@ -1,7 +1,7 @@
 # ub1nu11 
 ***In development***
 
-ub1nu11 is a strong IT multi-management platform containing many instruments and techniques.
+ub1nu11 is a strong IT security and multi-management platform containing many instruments and techniques.
 This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ------------------------------------------------------------------------
