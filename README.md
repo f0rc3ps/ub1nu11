@@ -26,7 +26,10 @@ The ub1nu11 installation needs at least:
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/installUB.sh)"
 ```
-### Update
+### Update:
+
+- ***NOTE:*** THIS IS A DIST-UPGRADE, IF YOU DO THIS YOU WILL LOSE ALL YOUR DATA! MAKE BACKUP BEFORE YOU DO THIS!
+
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB.sh)"
 ```
