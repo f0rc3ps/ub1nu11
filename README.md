@@ -9,7 +9,6 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 ![](doc/ub1nu11.png)
 
 - tools
-- 
 ![](doc/tools.png)
 
 ***WARNING: YOU NEED TO BE A ROOT USER***
