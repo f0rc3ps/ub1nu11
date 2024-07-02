@@ -14,7 +14,9 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ***WARNING: YOU NEED TO BE A ROOT USER***
 
-***system requirements***
+------------------------------------------------------------------------
+
+***system requirements:***
 
 The ub1nu11 installation needs at least:
 
