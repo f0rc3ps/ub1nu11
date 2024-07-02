@@ -14,6 +14,14 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ***WARNING: YOU NEED TO BE A ROOT USER***
 
+------------------------------------------------------------------------
+
+***system requirements:***
+
+The ub1nu11 installation needs at least:
+
+| ***8-16 GB RAM*** | ***128 GB free disk space*** | as well as a working (outgoing non-filtered) internet connection.
+
 ### Install
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/installUB.sh)"
@@ -93,7 +101,7 @@ http://localhost:8080/
 ```bash
 bash stopsamurai.sh
 ```
-# Removing of the already composed ub1nu11 image
+# Removing of the already composed ub1nu11 images
 ```bash
 docker system prune
 docker system prune -a
@@ -103,6 +111,7 @@ docker system prune -a
 - [Hive](https://docs.thehive-project.org/thehive/legacy/thehive3/installation/install-guide/)
 - [OWASP-Calculator](https://javierolmedo.github.io/OWASP-Calculator/)
 - [Cortex](https://github.com/TheHive-Project/Cortex)
+- [more...](soon)
 
 
 **Have fun** ***engineers*** ;)
