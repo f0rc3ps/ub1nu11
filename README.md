@@ -12,6 +12,10 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ![](doc/tools.png)
 
+- information
+
+![](doc/info.png)
+
 ***WARNING: YOU NEED TO BE A ROOT USER***
 
 ------------------------------------------------------------------------
