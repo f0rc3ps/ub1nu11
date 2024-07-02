@@ -14,6 +14,8 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 ***WARNING: YOU NEED TO BE A ROOT USER***
 
+Meet the [system requirements](#system-requirements). The T-Pot installation needs at least 8-16 GB RAM, 128 GB free disk space as well as a working (outgoing non-filtered) internet connection.
+
 ### Install
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/installUB.sh)"
