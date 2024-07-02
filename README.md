@@ -18,7 +18,7 @@ This system is compatible with Debian and Ubuntu servers - the latest versions!
 
 The ub1nu11 installation needs at least:
 
-| 8-16 GB RAM | 128 GB free disk | space as well as a working (outgoing non-filtered) internet connection.
+| ***8-16 GB RAM*** | ***128 GB free disk space*** | as well as a working (outgoing non-filtered) internet connection.
 
 ### Install
 ```
