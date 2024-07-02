@@ -101,7 +101,7 @@ http://localhost:8080/
 ```bash
 bash stopsamurai.sh
 ```
-# Removing of the already composed ub1nu11 image
+# Removing of the already composed ub1nu11 images
 ```bash
 docker system prune
 docker system prune -a
