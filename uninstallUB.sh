@@ -23,5 +23,12 @@ echo "### Now removing ${HOME}/ub1nu11."
 sudo rm -rf ${HOME}/ub1nu11
 apt autoremove -y
 
---uninstall
+bash wazuh-install.sh --uninstall
+apt-get remove --purge wazuh-dashboard -y
+apt-get remove --purge wazuh-manager -y
+systemctl disable wazuh-manager
+systemctl daemon-reload
+apt-get remove --purge filebeat -y
+apt-get remove --purge wazuh-indexer -y
+
 exit 0;
