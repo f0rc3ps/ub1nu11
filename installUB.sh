@@ -14,6 +14,7 @@ rm -rf /var/lib/docker
 rm -rf /etc/docker
 
 ### Install Docker
+apr autoremove -y
 apt update && apt upgrade && apt autoremove -y
 sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Docker/main/installer_24.04.sh | sh
 echo "### Starting the Docker service...###"
