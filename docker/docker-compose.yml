@@ -43,10 +43,10 @@ services:
       - "0.0.0.0:9000:9000"
     command: --cortex-port 9001
    
-### Spiderfoot    
+### Spiderfoot
   spiderfoot:
     build:
-    context: ./
+      context: ./
     volumes:
       - spiderfoot-data:/var/lib/spiderfoot
     image: spiderfoot
@@ -54,4 +54,7 @@ services:
     ports:
       - "5001:5001"
     restart: unless-stopped
+
+volumes:
+  spiderfoot-data:
     
