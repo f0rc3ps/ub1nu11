@@ -36,8 +36,15 @@
 	document.getElementById('TheHive').href = window.location.protocol + "//" + window.location.hostname + ":9000";
 	document.getElementById('Cortex').href = window.location.protocol + "//" + window.location.hostname + ":9001";
 	document.getElementById('spiderfoot').href = window.location.protocol + "//" + window.location.hostname + ":5001";
-	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + ":443";
+	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/";
 	 }
+	 
+	app.get('/', function(req, res, next) { 
+    if (req.protocol == 'http') { 
+        res.redirect('https://' + 
+        req.get('siem') + req.originalUrl); 
+    } 
+});
 	 
 </script>
 
