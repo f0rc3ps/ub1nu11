@@ -35,7 +35,7 @@ env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master
 - ***NOTE:*** THIS IS A DIST-UPGRADE, IF YOU DO THIS YOU WILL LOSE ALL YOUR DATA! MAKE BACKUP BEFORE YOU DO THIS!
 
 ```
-env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB.sh)"
+env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB1nu11docker-only.sh)"
 ```
 ### Uninstall:
 ```
