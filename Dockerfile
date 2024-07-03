@@ -60,6 +60,7 @@ ADD /env/mgmt /var/www/html/mgmt/
 
 # users
 COPY /sec/makesec.sh /
+COPY deploy.sh /
 
 # Protect 
 # RUN chmod +x ./makesec.sh
@@ -75,4 +76,6 @@ COPY credocred.sh /credocred.sh
 COPY 000-default.conf /etc/apache2/sites-enabled/
 COPY 000-default.conf /etc/apache2/sites-available/
 
+RUN chmod +x /deploy.sh
+CMD ["/deploy.sh"]
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
