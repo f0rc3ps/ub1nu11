@@ -45,5 +45,15 @@ services:
 
   ### spiderfoot
   spiderfoot:
-    build: spiderfoot/.
-    image: "spiderfoot:stable"
+    build:
+      context: ./
+    volumes:
+      - spiderfoot-data:/var/lib/spiderfoot
+    image: "josaorg/spiderfoot:stable"
+    container_name: spiderfoot
+    ports:
+      - "5001:5001"
+    restart: unless-stopped
+
+volumes:
+  spiderfoot-data:
