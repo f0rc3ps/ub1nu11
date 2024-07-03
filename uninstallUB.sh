@@ -32,5 +32,6 @@ systemctl disable wazuh-manager
 systemctl daemon-reload
 apt-get remove --purge filebeat -y
 apt-get remove --purge wazuh-indexer -y
+rm -rf /etc/apt/sources.list.d/*wazuh-*
 
 exit 0;
