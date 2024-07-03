@@ -26,6 +26,9 @@ echo "Please wait..."
 # Install ub1nu11 dockers
 git clone https://github.com/f0rc3ps/ub1nu11.git
 docker-compose -f ub1nu11/docker/docker-compose.yml up -d
+cd ub1nu11/env/mgmt/spiderfoot/spiderfoot
+pip3 install -r requirements.txt
+python3 ./sf.py -l 127.0.0.1:5001 &&
 
 ### Clean installation:
 #cd ..
