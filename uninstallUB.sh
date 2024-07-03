@@ -22,4 +22,6 @@ apt update && apt upgrade -y
 echo "### Now removing ${HOME}/ub1nu11."
 sudo rm -rf ${HOME}/ub1nu11
 apt autoremove -y
+
+--uninstall
 exit 0;
