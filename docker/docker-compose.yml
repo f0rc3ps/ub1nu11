@@ -42,3 +42,8 @@ services:
     ports:
       - "0.0.0.0:9000:9000"
     command: --cortex-port 9001
+
+  ### spiderfoot
+    spiderfoot:
+    build: spiderfoot/.
+    image: "spiderfoot"
