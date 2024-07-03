@@ -119,6 +119,7 @@ docker system prune -a
 - [OWASP-Calculator](https://javierolmedo.github.io/OWASP-Calculator/)
 - [Cortex](https://github.com/TheHive-Project/Cortex)
 - [Spiderfoot](https://github.com/smicallef/spiderfoot/tree/master)
+- [Wazuh](https://wazuh.com/)
 
 
 **Have fun** ***engineers*** ;)
