@@ -44,7 +44,7 @@ services:
     command: --cortex-port 9001
    
 ### Spiderfoot    
-      spiderfoot:
+  spiderfoot:
     build:
     context: ./
     volumes:
