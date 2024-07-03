@@ -55,5 +55,3 @@ services:
       - "5001:5001"
     restart: unless-stopped
     
-    volumes:
-    spiderfoot-data:
