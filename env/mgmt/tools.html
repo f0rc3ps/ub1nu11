@@ -36,16 +36,9 @@
 	document.getElementById('TheHive').href = window.location.protocol + "//" + window.location.hostname + ":9000";
 	document.getElementById('Cortex').href = window.location.protocol + "//" + window.location.hostname + ":9001";
 	document.getElementById('spiderfoot').href = window.location.protocol + "//" + window.location.hostname + ":5001";
-	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/";
-	 }
 	 
-	app.get('/', function(req, res, next) { 
-    if (req.protocol == 'http') { 
-        res.redirect('https://' + 
-        req.get('siem') + req.originalUrl); 
-    } 
-});
-	 
+	}
+ 
 </script>
 
 <body onload="setHref()">
@@ -54,7 +47,6 @@
 	<a href="" target="_blank" id="Cortex"><b><h1><p style="color:white;">Cortex</p></h1></b></a>
 	<a href="/mgmt/CALC/" target="_blank" id="Calc"><b><h1><p style="color:white;">OWASP-Calculator</p></h1></b></a>
 	<a href="" target="_blank" id="spiderfoot"><b><h1><p style="color:white;">Spiderfoot</p></h1></b></a>
-	<a href="" target="_blank" id="siem"><b><h1><p style="color:white;">SIEM</p></h1></b></a>
 </body>
 </center>
 </html>
