@@ -35,14 +35,9 @@
 
 	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/";
 	 }
-if (window.location.protocol("siem") < 0 
 
-  && location.protocol.toLowerCase() !== "https:") {
-
-    const url = `https://${siem.host}`;
-
-    location.replace(url);
-
+if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
 }
 	 
 </script>
