@@ -55,8 +55,8 @@ EXPOSE 443 8080
 RUN rm -rf /var/www/html/*
 
 # mgmt
-#RUN mkdir -p /var/www/html/mgmt
-COPY /env/mgmt/* /var/www/html/
+RUN mkdir -p /var/www/html/mgmt/
+ADD /env/mgmt/ /var/www/html/mgmt/
 
 # users
 COPY /sec/makesec.sh /
