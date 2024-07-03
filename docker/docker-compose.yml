@@ -46,4 +46,4 @@ services:
   ### spiderfoot
   spiderfoot:
     build: spiderfoot/.
-    image: "spiderfoot"
+    image: "spiderfoot:stable"
