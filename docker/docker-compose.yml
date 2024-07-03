@@ -44,16 +44,16 @@ services:
     command: --cortex-port 9001
 
   ### spiderfoot
-  #spiderfoot:
-    #build:
-      #context: ./
-    #volumes:
-      #- spiderfoot-data:/var/lib/spiderfoot
-    #image: "josaorg/spiderfoot:stable"
-    #container_name: spiderfoot
-    #ports:
-      #- "5001:5001"
-    #restart: unless-stopped
+  spiderfoot:
+    build:
+      context: ./
+    volumes:
+      - spiderfoot-data:/var/lib/spiderfoot
+    image: "josaorg/spiderfoot:stable"
+    container_name: spiderfoot
+    ports:
+      - "5001:5001"
+    restart: unless-stopped
 
-#volumes:
- # spiderfoot-data:
+ volumes:
+  spiderfoot-data:
