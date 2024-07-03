@@ -23,6 +23,8 @@ echo "### Now removing ${HOME}/ub1nu11."
 sudo rm -rf ${HOME}/ub1nu11
 apt autoremove -y
 
+### Uninstall Wazuh
+curl -sO https://packages.wazuh.com/4.8/wazuh-install.sh
 bash wazuh-install.sh --uninstall
 apt-get remove --purge wazuh-dashboard -y
 apt-get remove --purge wazuh-manager -y
