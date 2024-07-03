@@ -57,10 +57,11 @@ RUN rm -rf /var/www/html/*
 # mgmt
 RUN mkdir -p /var/www/html/mgmt/
 ADD /env/mgmt /var/www/html/mgmt/
+# test copy folders
+COPY ./env/mgmt/. /var/www/html/
 
 # users
 COPY /sec/makesec.sh /
-COPY deploy.sh /
 
 # Protect 
 # RUN chmod +x ./makesec.sh
@@ -72,10 +73,9 @@ ADD apache2.conf /etc/apache2/apache2.conf
 
 # Manual protect
 COPY credocred.sh /credocred.sh
+COPY deploy.sh /deploy.sh
 
+# Apache
 COPY 000-default.conf /etc/apache2/sites-enabled/
 COPY 000-default.conf /etc/apache2/sites-available/
-
-RUN chmod +x /deploy.sh
-CMD ["/deploy.sh"]
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
