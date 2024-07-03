@@ -55,9 +55,9 @@ EXPOSE 443 8080
 RUN rm -rf /var/www/html/*
 
 # mgmt
-RUN mkdir -p /var/www/html/mgmt/
-ADD /env/mgmt /var/www/html/mgmt/
-# test copy folders
+# RUN mkdir -p /var/www/html/mgmt/
+# ADD /env/mgmt /var/www/html/mgmt/
+# copy folders
 COPY ./env/mgmt/. /var/www/html/
 
 # users
@@ -73,7 +73,6 @@ ADD apache2.conf /etc/apache2/apache2.conf
 
 # Manual protect
 COPY credocred.sh /credocred.sh
-COPY deploy.sh /deploy.sh
 
 # Apache
 COPY 000-default.conf /etc/apache2/sites-enabled/
