@@ -1,4 +1,4 @@
-# ub1nu11: all that you need
+# ub1nu11: all that you need by OPSEC
 ***In development***
 
 ub1nu11 is a strong IT security and multi-management platform containing many instruments and techniques.
