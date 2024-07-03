@@ -35,13 +35,13 @@
 	if (location.protocol !== "https:") {
   location.protocol = "https:";
 }
-	document.getElementById('wazuh').href = window.location.protocol + "//" + window.location.hostname + "/";
+	document.getElementById('wazuh').href = window.location.protocol + "//" + window.location.hostname + ":443";
 	//https://192.168.100.6/
 }
 </script>
 
 <body onload="setHref()">
-	<a href="/" target="_blank" id="wazuh"><b><h1><p style="color:white;">Wazuh</p></h1></b></a>
+	<a href="" target="_blank" id="wazuh"><b><h1><p style="color:white;">Wazuh</p></h1></b></a>
 </body>
 </center>
 </html>
