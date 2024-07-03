@@ -1,4 +1,4 @@
-# ub1nu11 
+# ub1nu11: all that you need by [OPSEC](https://cyboxopsec.com/CyboxOPSEC/)
 ***In development***
 
 ub1nu11 is a strong IT security and multi-management platform containing many instruments and techniques.
@@ -119,6 +119,7 @@ docker system prune -a
 - [OWASP-Calculator](https://javierolmedo.github.io/OWASP-Calculator/)
 - [Cortex](https://github.com/TheHive-Project/Cortex)
 - [Spiderfoot](https://github.com/smicallef/spiderfoot/tree/master)
+- [Wazuh](https://wazuh.com/)
 
 
 **Have fun** ***engineers*** ;)
