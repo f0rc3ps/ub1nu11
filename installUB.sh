@@ -23,8 +23,10 @@ systemctl start docker.service
 sleep 5;
 echo "Please wait..."
 
-# Install ub1nu11
-git clone https://github.com/f0rc3ps/ub1nu11.git && sudo docker-compose -f ub1nu11/docker/docker-compose.yml up -d
+# Install ub1nu11 dockers
+git clone https://github.com/f0rc3ps/ub1nu11.git
+docker-compose -f ub1nu11/docker/docker-compose.yml up -d
+docker-compose -f ub1nu11/docker/spiderfoot/docker-compose.yml up -d
 
 ### Clean installation:
 #cd ..
