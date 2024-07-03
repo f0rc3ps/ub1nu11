@@ -31,6 +31,9 @@
 </head>
 
 <script>
+	if (location.protocol !== "https:") {
+  location.protocol = "https:";
+}
 	function setHref() {
 	document.getElementById('wazuh').href = window.location.protocol + "//" + window.location.hostname + ":443";
 
