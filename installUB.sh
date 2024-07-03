@@ -28,7 +28,7 @@ git clone https://github.com/f0rc3ps/ub1nu11.git
 docker-compose -f ub1nu11/docker/docker-compose.yml up -d
 
 # Install Spiderfoot
-cd ub1nu11
+cd ub1nu11/env/mgmt/
 git clone https://github.com/smicallef/spiderfoot.git
 cd spiderfoot
 pip3 install -r requirements.txt
