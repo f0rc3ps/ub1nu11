@@ -145,11 +145,23 @@
     <img src="assets/img/logo.webp" alt="T-Pot Logo" class="logo">
 </div>
 
+
+<script>
+	function setHref() {
+	if (location.protocol !== "https:") {
+  location.protocol = "https:";
+}
+	document.getElementById('wazuh').href = window.location.protocol + "//" + window.location.hostname + ":443";
+	//https://192.168.100.6/
+}
+</script>
+
+
 <div class="boxes-container">
     <div class="link-box tools-box" data-caption="&#xf085;">
 		<a href="tools.html" class="link" target="_blank">Tools</a>
 		<a href="info.html" class="link" target="_blank">Information</a>
-		<a href="siem.html" class="link" target="_blank">SIEM</a>
+		<a href="" class="link" target="_blank" id="wazuh">Wazuh</a>
 
     </div>
     <div class="link-box links-box" data-caption="&#xf0c1;">
