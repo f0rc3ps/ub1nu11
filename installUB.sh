@@ -27,6 +27,10 @@ echo "Please wait..."
 git clone https://github.com/f0rc3ps/ub1nu11.git
 docker-compose -f ub1nu11/docker/docker-compose.yml up -d
 
+# Install wazuh
+curl -sO https://packages.wazuh.com/4.8/wazuh-install.sh
+bash wazuh-install.sh -a
+
 ### Clean installation:
 #cd ..
 #rm -rf ub1nu11/
