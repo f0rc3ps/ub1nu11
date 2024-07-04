@@ -8,4 +8,5 @@ rm -rf ub1nu11
 git clone https://github.com/f0rc3ps/ub1nu11.git
 cd ub1nu11
 docker-compose -f docker/docker-compose.yml up -d
+cd ${HOME}
 exit 0;
