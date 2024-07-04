@@ -35,10 +35,9 @@
 
 	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/";
 	 }
-
-if (location.protocol !== 'https:') {
-    location.replace(`https:${location.href.substring(location.protocol.length)}`);
-}
+	 if (window.location.protocol !== 'https:') {
+		 window.location.href = 'https://' + window.location.hostname + window.location.pathname + window.location.search;
+		 }
 	 
 </script>
 
