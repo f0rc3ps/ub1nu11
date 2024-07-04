@@ -33,9 +33,7 @@ env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master
 ```
 ### Update:
 
-- NOTE: When you move your machine on the other network you must use ***updateUB1nu11docker-only.sh***
-
-- ***NOTE:*** THIS IS A DIST-UPGRADE, IF YOU DO THIS YOU WILL LOSE ALL YOUR DATA! MAKE BACKUP BEFORE YOU DO THIS!
+- ***NOTE:*** When you move your machine on the other network you must use ***updateUB1nu11docker-only.sh***
 
 ```
 env bash -c "$(curl -sL https://raw.githubusercontent.com/f0rc3ps/ub1nu11/master/updateUB1nu11docker-only.sh)"
