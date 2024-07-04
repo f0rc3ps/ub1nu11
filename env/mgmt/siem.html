@@ -31,9 +31,10 @@
 </head>
 
 		<script>
-			function setHref() //{
+			function setHref() {
 				//document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/app/login?";
-				//}
+				document.getElementById('siem').href  = 'https://' + window.location.hostname = 'https://' + window.location.pathname = '/app/login?' + window.location.search;
+				}
 				if (window.location.protocol !== 'https:') {
 					document.getElementById('siem').href  = 'https://' + window.location.hostname = 'https://' + window.location.pathname = '/app/login?' + window.location.search;
 					}
