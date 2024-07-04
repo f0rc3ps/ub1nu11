@@ -24,7 +24,7 @@ systemctl start docker.service
 git clone https://github.com/f0rc3ps/ub1nu11.git
 
 # set ip
-cd ub1nu11/
+cd ub1nu11/docker/
 kur=$(hostname --all-ip-addresses | awk '{print $1}') 
 sed -i 's/kurec/'$kur'/g' env/mgmt/index.html
 
