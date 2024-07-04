@@ -58,7 +58,7 @@ RUN rm -rf /var/www/html/*
 # RUN mkdir -p /var/www/html/mgmt/
 # ADD /env/mgmt /var/www/html/mgmt/
 # copy folders
-COPY ./env/mgmt/. /var/www/html/
+COPY /env/mgmt/. /var/www/html/
 
 # users
 COPY /sec/makesec.sh /
