@@ -1,8 +1,9 @@
 # ub1nu11: all that you need by [OPSEC](https://cyboxopsec.com/CyboxOPSEC/)
 ***~In development~***
 
-ub1nu11 is a strong IT security and multi-management platform containing many instruments and techniques.
+ub1nu11 is a strong IT security analytics and multi-management platform containing many instruments and techniques. 
 This system is compatible with Debian and Ubuntu servers - the latest versions!
+For more information, please contact us.
 
 ------------------------------------------------------------------------
 
