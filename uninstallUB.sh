@@ -5,6 +5,9 @@ docker stop ub1nu11
 docker system prune -a
 apt autoremove -y
 
+# Clean wazuh 
+rm -rf /etc/apt/sources.list.d/wazuh-install.sh
+
 # Clean docker
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 sleep 3;
