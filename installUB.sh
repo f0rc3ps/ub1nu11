@@ -4,6 +4,7 @@ echo "### Preparing your OS for installation on AlmaLinux, Fedora, Debian, openS
 echo
 sleep 5;
 
+
 ### Clean and prepare the ENV
 systemctl stop docker.socket
 systemctl stop docker.service
@@ -26,6 +27,13 @@ echo "Please wait..."
 
 # Install ub1nu11 dockers
 git clone https://github.com/f0rc3ps/ub1nu11.git
+
+# set ip
+cd ub1nu11/
+kur=$(hostname --all-ip-addresses | awk '{print $1}') 
+sed -i 's/kurec/'$kur'/g' env/mgmt/index.html
+
+# Install conteiners
 docker-compose -f ub1nu11/docker/docker-compose.yml up -d
 
 # Install wazuh
