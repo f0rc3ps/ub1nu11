@@ -24,9 +24,9 @@ systemctl start docker.service
 git clone https://github.com/f0rc3ps/ub1nu11.git
 
 # set ip
-cd ub1nu11/
-kur=$(hostname --all-ip-addresses | awk '{print $1}') 
-sed -i 's/kurec/'$kur'/g' env/mgmt/index.html
+cd ub1nu11/docker/
+chmod a+x setenvip.sh
+bash setenvip.sh
 
 # Install conteiners
 cd ${HOME}
