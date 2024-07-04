@@ -4,7 +4,6 @@ echo "### Preparing your OS for installation on AlmaLinux, Fedora, Debian, openS
 echo
 sleep 5;
 
-
 ### Clean and prepare the ENV
 systemctl stop docker.socket
 systemctl stop docker.service
@@ -21,11 +20,7 @@ sudo curl -s https://raw.githubusercontent.com/nu11secur1ty/Docker/main/installe
 echo "### Starting the Docker service...###"
 systemctl start docker.service
 
-### ENV
-sleep 5;
-echo "Please wait..."
-
-# Install ub1nu11 dockers
+# get ub1nu11 
 git clone https://github.com/f0rc3ps/ub1nu11.git
 
 # set ip
@@ -34,7 +29,12 @@ kur=$(hostname --all-ip-addresses | awk '{print $1}')
 sed -i 's/kurec/'$kur'/g' env/mgmt/index.html
 
 # Install conteiners
+cd ${HOME}
 docker-compose -f ub1nu11/docker/docker-compose.yml up -d
+
+### ENV
+sleep 5;
+echo "Please wait..."
 
 # Install wazuh
 curl -sO https://packages.wazuh.com/4.8/wazuh-install.sh
