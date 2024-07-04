@@ -7,7 +7,7 @@ services:
     container_name: ub1nu11
     restart: always
     ports:
-      - "8080:80"
+      - "80:80"
     image: "f0rc3ps/ub1nu11:latest"
 
 ### Grafana 
