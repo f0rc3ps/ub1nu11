@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 cd ${HOME}
 
-# clean
+# Stop for updating
 docker stop ub1nu11
 docker compose -f ~/ub1nu11/docker/docker-compose.yml down -v
 echo "Please wait..."
