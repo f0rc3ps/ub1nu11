@@ -54,6 +54,7 @@ http://localhost:8080/
 http://localhost:8080/info.php
 # Shell
 cd ub1nu11/
+docker exec -it ub1nu11 /bin/bash
 docker-compose exec ub1nu11 /bin/bash
 ```
 - Pull
