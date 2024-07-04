@@ -149,7 +149,26 @@
     <div class="link-box tools-box" data-caption="&#xf085;">
 		<a href="tools.html" class="link" target="_blank">Tools</a>
 		<a href="info.html" class="link" target="_blank">Information</a>
-		<a href="siem.html" class="link" target="_blank">SIEM</a>
+		
+		
+		
+		<script>
+	
+	function setHref() {
+
+	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/";
+	 }
+	 
+    if (window.location.protocol !== 'https:') {
+    window.location.href = 'https://' + window.location.hostname + window.location.pathname + window.location.search;
+}
+	 
+</script>
+
+<body onload="setHref()">
+	<a href="" target="_blank" class="link" id="siem"><b><h1><p style="color:white;">SIEM</p></h1></b></a>
+</body>
+		
 
     </div>
     <div class="link-box links-box" data-caption="&#xf0c1;">
