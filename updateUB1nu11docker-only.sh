@@ -3,7 +3,7 @@ cd ${HOME}
 
 # clean
 docker stop ub1nu11
-docker system prune -a
+docker compose -f ~/ub1nu11/docker/docker-compose.yml down -v
 echo "Please wait..."
 sleep 5;
 rm -rf ub1nu11
