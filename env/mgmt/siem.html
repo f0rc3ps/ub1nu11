@@ -30,15 +30,18 @@
     </style>
 </head>
 
-		<script>
-			function setHref() {
-				//document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/app/login?";
-				document.getElementById('siem').href  = 'https://' + window.location.hostname = 'https://' + window.location.pathname = '/app/login?' + window.location.search;
-				}
-				if (window.location.protocol !== 'https:') {
-					document.getElementById('siem').href  = 'https://' + window.location.hostname = 'https://' + window.location.pathname = '/app/login?' + window.location.search;
-					}
-		</script>
+<script>
+	
+	function setHref() {
+
+	document.getElementById('siem').href = window.location.protocol + "//" + window.location.hostname + "/";
+	 }
+	 
+    if (window.location.protocol !== 'https:') {
+    window.location.href = 'https://' + window.location.hostname + window.location.pathname + window.location.search;
+}
+	 
+</script>
 
 <body onload="setHref()">
 	<a href="" target="_blank" id="siem"><b><h1><p style="color:white;">SIEM</p></h1></b></a>
