@@ -71,7 +71,7 @@ password: Pr#d@TEL#ten#sAd0brEd06l#
 ## Starting the ub1nu11 dirrectly
 
 ```bash
-docker run -d -p 8080:80 --name ub1nu11 f0rc3ps/ub1nu11
+docker run -d -p 80:80 --name ub1nu11 f0rc3ps/ub1nu11
 ```
 
 ## MySQL management
