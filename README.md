@@ -1,4 +1,4 @@
-# ub1nu11: all that you need by [OPSEC](https://cyboxopsec.com/CyboxOPSEC/)
+# ub1nu11: all that you need by OPSEC
 ***~In development~***
 
 ub1nu11 is a strong IT security analytics and multi-management platform containing many instruments and techniques. 
